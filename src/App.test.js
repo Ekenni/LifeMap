@@ -1,8 +1,11 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
+test("renders city data from the dataset", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  expect(screen.getByText("Lincoln")).toBeInTheDocument();
+  expect(screen.getByText("Nebraska")).toBeInTheDocument();
+  expect(screen.getAllByText("Average Rent")).toHaveLength(2);
+  expect(screen.getByText("1,150 USD/month")).toBeInTheDocument();
+  expect(screen.getAllByText("Average Home Price")).toHaveLength(2);
 });

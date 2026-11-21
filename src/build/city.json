@@ -1,0 +1,1673 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_name": "City Comparison Sample Dataset",
+  "description": "Illustrative sample values for application development only. Values are not verified city statistics and must not be used for real-world decisions.",
+  "default_currency": "USD",
+  "default_measurement_system": "US customary",
+  "cities": [
+    {
+      "id": "lincoln-ne",
+      "name": "Lincoln",
+      "state": "Nebraska",
+      "state_code": "NE",
+      "country": "United States",
+      "coordinates": {
+        "latitude": 40.8136,
+        "longitude": -96.7026
+      },
+      "categories": {
+        "cost_of_living": {
+          "label": "Cost of Living",
+          "metrics": {
+            "average_rent": {
+              "value": 1150,
+              "unit": "USD/month",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "average_home_price": {
+              "value": 285000,
+              "unit": "USD",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "property_tax_rate": {
+              "value": 1.75,
+              "unit": "percent",
+              "statistic": "average_effective_rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "state_income_tax": {
+              "value": 5.2,
+              "unit": "percent",
+              "statistic": "top_marginal_rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "transportation_costs": {
+              "value": 620,
+              "unit": "USD/month",
+              "statistic": "estimated_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "healthcare_costs": {
+              "value": 480,
+              "unit": "USD/month",
+              "statistic": "estimated_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "childcare_costs": {
+              "value": 1050,
+              "unit": "USD/month",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "income_needed_to_live_comfortably": {
+              "value": 72000,
+              "unit": "USD/year",
+              "statistic": "estimated_household_income",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "economy_employment": {
+          "label": "Economy & Employment",
+          "metrics": {
+            "unemployment_rate": {
+              "value": 2.8,
+              "unit": "percent",
+              "statistic": "rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "average_salary_major_employers": {
+              "value": [
+                {
+                  "employer": "University of Nebraska–Lincoln",
+                  "average_salary_usd": 62000
+                },
+                {
+                  "employer": "Bryan Health",
+                  "average_salary_usd": 68000
+                },
+                {
+                  "employer": "State of Nebraska",
+                  "average_salary_usd": 65000
+                }
+              ],
+              "unit": "USD/year",
+              "statistic": "employer_salary_examples",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "tech_job_availability": {
+              "value": 420,
+              "unit": "jobs",
+              "statistic": "estimated_openings",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "healthcare_employment": {
+              "value": 14500,
+              "unit": "jobs",
+              "statistic": "estimated_employment",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "small_business_environment": {
+              "value": 76,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "government_employment": {
+              "value": 12500,
+              "unit": "jobs",
+              "statistic": "estimated_employment",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "manufacturing_employment": {
+              "value": 8500,
+              "unit": "jobs",
+              "statistic": "estimated_employment",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "minimum_wage": {
+              "value": 15.0,
+              "unit": "USD/hour",
+              "statistic": "statutory_rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "safety": {
+          "label": "Safety",
+          "metrics": {
+            "violent_crime_rate": {
+              "value": 310,
+              "unit": "incidents_per_100k",
+              "statistic": "annual_rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "property_crime_rate": {
+              "value": 2250,
+              "unit": "incidents_per_100k",
+              "statistic": "annual_rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "homicide_rate": {
+              "value": 3.0,
+              "unit": "incidents_per_100k",
+              "statistic": "annual_rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "climate_environment": {
+          "label": "Climate & Environment",
+          "metrics": {
+            "natural_disaster_risk": {
+              "value": 48,
+              "unit": "score_0_100",
+              "statistic": "illustrative_risk_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "flood_risk": {
+              "value": 42,
+              "unit": "score_0_100",
+              "statistic": "illustrative_risk_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "tornado_risk": {
+              "value": 68,
+              "unit": "score_0_100",
+              "statistic": "illustrative_risk_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "earthquake_risk": {
+              "value": 8,
+              "unit": "score_0_100",
+              "statistic": "illustrative_risk_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "wildfire_risk": {
+              "value": 5,
+              "unit": "score_0_100",
+              "statistic": "illustrative_risk_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "average_annual_temperature": {
+              "value": 52,
+              "unit": "°F",
+              "statistic": "annual_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "summer_high": {
+              "value": 88,
+              "unit": "°F",
+              "statistic": "average_high",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "winter_low": {
+              "value": 15,
+              "unit": "°F",
+              "statistic": "average_low",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "annual_snowfall": {
+              "value": 26,
+              "unit": "inches/year",
+              "statistic": "annual_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "annual_rainfall": {
+              "value": 29,
+              "unit": "inches/year",
+              "statistic": "annual_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "average_humidity": {
+              "value": 65,
+              "unit": "percent",
+              "statistic": "annual_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "average_wind_speed": {
+              "value": 10,
+              "unit": "mph",
+              "statistic": "annual_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "air_quality_index": {
+              "value": 42,
+              "unit": "AQI",
+              "statistic": "annual_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "allergy_pollen_level": {
+              "value": 7,
+              "unit": "score_0_10",
+              "statistic": "illustrative_seasonal_level",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "education": {
+          "label": "Education",
+          "metrics": {
+            "public_school_rating": {
+              "value": 7.2,
+              "unit": "score_0_10",
+              "statistic": "illustrative_rating",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "student_teacher_ratio": {
+              "value": 14.5,
+              "unit": "students_per_teacher",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "graduation_rate": {
+              "value": 88,
+              "unit": "percent",
+              "statistic": "rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "colleges": {
+              "value": 4,
+              "unit": "count",
+              "statistic": "institutions",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "lifestyle_entertainment": {
+          "label": "Lifestyle & Entertainment",
+          "metrics": {
+            "libraries": {
+              "value": 9,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "museums": {
+              "value": 8,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "restaurants_and_food_variety": {
+              "value": 68,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "bars_and_nightlife": {
+              "value": 55,
+              "unit": "count",
+              "statistic": "venues",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "breweries_and_wineries": {
+              "value": 12,
+              "unit": "count",
+              "statistic": "venues",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "coffee_shops": {
+              "value": 48,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "shopping": {
+              "value": 65,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "malls": {
+              "value": 2,
+              "unit": "count",
+              "statistic": "malls",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "concert_venues": {
+              "value": 8,
+              "unit": "count",
+              "statistic": "venues",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "theatres": {
+              "value": 7,
+              "unit": "count",
+              "statistic": "venues",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "festivals": {
+              "value": 24,
+              "unit": "count",
+              "statistic": "annual_events",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "sports": {
+              "value": 62,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "casinos": {
+              "value": 0,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "movie_theaters": {
+              "value": 5,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "outdoor_recreation": {
+          "label": "Outdoor Recreation",
+          "metrics": {
+            "parks_and_playgrounds": {
+              "value": 145,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "hiking_trails": {
+              "value": 135,
+              "unit": "miles",
+              "statistic": "mapped_trail_miles",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "mountain_access": {
+              "value": 430,
+              "unit": "miles",
+              "statistic": "distance_to_nearest_major_mountain_area",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "lakes_and_rivers": {
+              "value": 18,
+              "unit": "count",
+              "statistic": "nearby_water_bodies",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "beaches": {
+              "value": 2,
+              "unit": "count",
+              "statistic": "nearby_beaches",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "skiing_and_snowboarding": {
+              "value": 520,
+              "unit": "miles",
+              "statistic": "distance_to_nearest_ski_resort",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "running_trails": {
+              "value": 110,
+              "unit": "miles",
+              "statistic": "mapped_trail_miles",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "national_parks": {
+              "value": 0,
+              "unit": "count",
+              "statistic": "within_100_miles",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "rock_climbing": {
+              "value": 4,
+              "unit": "count",
+              "statistic": "nearby_climbing_areas",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "golfing": {
+              "value": 12,
+              "unit": "count",
+              "statistic": "courses",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "dog_parks": {
+              "value": 7,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "camping": {
+              "value": 16,
+              "unit": "count",
+              "statistic": "nearby_campgrounds",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "fishing": {
+              "value": 72,
+              "unit": "score_0_100",
+              "statistic": "illustrative_opportunity_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "healthcare": {
+          "label": "Healthcare",
+          "metrics": {
+            "hospitals": {
+              "value": 4,
+              "unit": "count",
+              "statistic": "facilities",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "maternity_services": {
+              "value": 3,
+              "unit": "count",
+              "statistic": "facilities_with_maternity_services",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "gyms": {
+              "value": 42,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "transportation": {
+          "label": "Transportation",
+          "metrics": {
+            "average_commute_time": {
+              "value": 19,
+              "unit": "minutes",
+              "statistic": "one_way_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "public_transportation": {
+              "value": 35,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "bus_stops": {
+              "value": 900,
+              "unit": "count",
+              "statistic": "stops",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "walkability": {
+              "value": 45,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "bikeability": {
+              "value": 67,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "traffic_congestion": {
+              "value": 24,
+              "unit": "score_0_100",
+              "statistic": "illustrative_congestion_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "train_access": {
+              "value": 25,
+              "unit": "score_0_100",
+              "statistic": "illustrative_access_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "electric_vehicle_charging": {
+              "value": 95,
+              "unit": "count",
+              "statistic": "public_charging_ports",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "disability_accessibility": {
+              "value": 72,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "airport_access": {
+              "value": 12,
+              "unit": "minutes",
+              "statistic": "drive_to_nearest_commercial_airport",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "demographics": {
+          "label": "Demographics",
+          "metrics": {
+            "population": {
+              "value": 295000,
+              "unit": "people",
+              "statistic": "estimate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "population_density": {
+              "value": 3200,
+              "unit": "people_per_sq_mile",
+              "statistic": "density",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "median_age": {
+              "value": 32.5,
+              "unit": "years",
+              "statistic": "median",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "retirees": {
+              "value": 12.5,
+              "unit": "percent",
+              "statistic": "population_age_65_plus",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "families_with_children": {
+              "value": 27,
+              "unit": "percent",
+              "statistic": "households",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "languages_spoken": {
+              "value": 65,
+              "unit": "count",
+              "statistic": "languages",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "cultural_diversity": {
+              "value": 48,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "housing": {
+          "label": "Housing",
+          "metrics": {
+            "average_home_size": {
+              "value": 1850,
+              "unit": "sq_ft",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "average_lot_size": {
+              "value": 7800,
+              "unit": "sq_ft",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "hoa_prevalence": {
+              "value": 12,
+              "unit": "percent",
+              "statistic": "share_of_residential_properties",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "housing_types": {
+              "value": {
+                "single_family": 64,
+                "apartments": 25,
+                "condos": 5,
+                "townhomes": 6
+              },
+              "unit": "percent",
+              "statistic": "estimated_unit_mix",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "business_environment": {
+          "label": "Business Environment",
+          "metrics": {
+            "business_taxes": {
+              "value": 24,
+              "unit": "percent",
+              "statistic": "illustrative_combined_business_tax_burden",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "commercial_rent": {
+              "value": 18.5,
+              "unit": "USD/sq_ft/year",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "small_business_environment_score": {
+              "value": 76,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "general_quality_of_life": {
+          "label": "General Quality of Life",
+          "metrics": {
+            "cleanliness": {
+              "value": 82,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "columbus-oh",
+      "name": "Columbus",
+      "state": "Ohio",
+      "state_code": "OH",
+      "country": "United States",
+      "coordinates": {
+        "latitude": 39.9612,
+        "longitude": -82.9988
+      },
+      "categories": {
+        "cost_of_living": {
+          "label": "Cost of Living",
+          "metrics": {
+            "average_rent": {
+              "value": 1450,
+              "unit": "USD/month",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "average_home_price": {
+              "value": 325000,
+              "unit": "USD",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "property_tax_rate": {
+              "value": 1.55,
+              "unit": "percent",
+              "statistic": "average_effective_rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "state_income_tax": {
+              "value": 3.5,
+              "unit": "percent",
+              "statistic": "top_marginal_rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "transportation_costs": {
+              "value": 710,
+              "unit": "USD/month",
+              "statistic": "estimated_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "healthcare_costs": {
+              "value": 510,
+              "unit": "USD/month",
+              "statistic": "estimated_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "childcare_costs": {
+              "value": 1250,
+              "unit": "USD/month",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "income_needed_to_live_comfortably": {
+              "value": 85000,
+              "unit": "USD/year",
+              "statistic": "estimated_household_income",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "economy_employment": {
+          "label": "Economy & Employment",
+          "metrics": {
+            "unemployment_rate": {
+              "value": 3.4,
+              "unit": "percent",
+              "statistic": "rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "average_salary_major_employers": {
+              "value": [
+                {
+                  "employer": "The Ohio State University",
+                  "average_salary_usd": 68000
+                },
+                {
+                  "employer": "OhioHealth",
+                  "average_salary_usd": 72000
+                },
+                {
+                  "employer": "Nationwide",
+                  "average_salary_usd": 82000
+                }
+              ],
+              "unit": "USD/year",
+              "statistic": "employer_salary_examples",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "tech_job_availability": {
+              "value": 1850,
+              "unit": "jobs",
+              "statistic": "estimated_openings",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "healthcare_employment": {
+              "value": 39000,
+              "unit": "jobs",
+              "statistic": "estimated_employment",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "small_business_environment": {
+              "value": 79,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "government_employment": {
+              "value": 21000,
+              "unit": "jobs",
+              "statistic": "estimated_employment",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "manufacturing_employment": {
+              "value": 22000,
+              "unit": "jobs",
+              "statistic": "estimated_employment",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "minimum_wage": {
+              "value": 10.7,
+              "unit": "USD/hour",
+              "statistic": "statutory_rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "safety": {
+          "label": "Safety",
+          "metrics": {
+            "violent_crime_rate": {
+              "value": 480,
+              "unit": "incidents_per_100k",
+              "statistic": "annual_rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "property_crime_rate": {
+              "value": 2850,
+              "unit": "incidents_per_100k",
+              "statistic": "annual_rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "homicide_rate": {
+              "value": 8.5,
+              "unit": "incidents_per_100k",
+              "statistic": "annual_rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "climate_environment": {
+          "label": "Climate & Environment",
+          "metrics": {
+            "natural_disaster_risk": {
+              "value": 34,
+              "unit": "score_0_100",
+              "statistic": "illustrative_risk_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "flood_risk": {
+              "value": 38,
+              "unit": "score_0_100",
+              "statistic": "illustrative_risk_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "tornado_risk": {
+              "value": 30,
+              "unit": "score_0_100",
+              "statistic": "illustrative_risk_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "earthquake_risk": {
+              "value": 5,
+              "unit": "score_0_100",
+              "statistic": "illustrative_risk_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "wildfire_risk": {
+              "value": 3,
+              "unit": "score_0_100",
+              "statistic": "illustrative_risk_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "average_annual_temperature": {
+              "value": 53,
+              "unit": "°F",
+              "statistic": "annual_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "summer_high": {
+              "value": 86,
+              "unit": "°F",
+              "statistic": "average_high",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "winter_low": {
+              "value": 20,
+              "unit": "°F",
+              "statistic": "average_low",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "annual_snowfall": {
+              "value": 28,
+              "unit": "inches/year",
+              "statistic": "annual_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "annual_rainfall": {
+              "value": 40,
+              "unit": "inches/year",
+              "statistic": "annual_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "average_humidity": {
+              "value": 68,
+              "unit": "percent",
+              "statistic": "annual_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "average_wind_speed": {
+              "value": 9,
+              "unit": "mph",
+              "statistic": "annual_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "air_quality_index": {
+              "value": 45,
+              "unit": "AQI",
+              "statistic": "annual_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "allergy_pollen_level": {
+              "value": 6,
+              "unit": "score_0_10",
+              "statistic": "illustrative_seasonal_level",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "education": {
+          "label": "Education",
+          "metrics": {
+            "public_school_rating": {
+              "value": 6.8,
+              "unit": "score_0_10",
+              "statistic": "illustrative_rating",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "student_teacher_ratio": {
+              "value": 16.0,
+              "unit": "students_per_teacher",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "graduation_rate": {
+              "value": 87,
+              "unit": "percent",
+              "statistic": "rate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "colleges": {
+              "value": 12,
+              "unit": "count",
+              "statistic": "institutions",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "lifestyle_entertainment": {
+          "label": "Lifestyle & Entertainment",
+          "metrics": {
+            "libraries": {
+              "value": 23,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "museums": {
+              "value": 30,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "restaurants_and_food_variety": {
+              "value": 86,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "bars_and_nightlife": {
+              "value": 180,
+              "unit": "count",
+              "statistic": "venues",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "breweries_and_wineries": {
+              "value": 55,
+              "unit": "count",
+              "statistic": "venues",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "coffee_shops": {
+              "value": 145,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "shopping": {
+              "value": 88,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "malls": {
+              "value": 6,
+              "unit": "count",
+              "statistic": "malls",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "concert_venues": {
+              "value": 25,
+              "unit": "count",
+              "statistic": "venues",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "theatres": {
+              "value": 24,
+              "unit": "count",
+              "statistic": "venues",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "festivals": {
+              "value": 65,
+              "unit": "count",
+              "statistic": "annual_events",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "sports": {
+              "value": 90,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "casinos": {
+              "value": 2,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "movie_theaters": {
+              "value": 18,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "outdoor_recreation": {
+          "label": "Outdoor Recreation",
+          "metrics": {
+            "parks_and_playgrounds": {
+              "value": 400,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "hiking_trails": {
+              "value": 220,
+              "unit": "miles",
+              "statistic": "mapped_trail_miles",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "mountain_access": {
+              "value": 250,
+              "unit": "miles",
+              "statistic": "distance_to_nearest_major_mountain_area",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "lakes_and_rivers": {
+              "value": 35,
+              "unit": "count",
+              "statistic": "nearby_water_bodies",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "beaches": {
+              "value": 5,
+              "unit": "count",
+              "statistic": "nearby_beaches",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "skiing_and_snowboarding": {
+              "value": 180,
+              "unit": "miles",
+              "statistic": "distance_to_nearest_ski_resort",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "running_trails": {
+              "value": 190,
+              "unit": "miles",
+              "statistic": "mapped_trail_miles",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "national_parks": {
+              "value": 1,
+              "unit": "count",
+              "statistic": "within_100_miles",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "rock_climbing": {
+              "value": 12,
+              "unit": "count",
+              "statistic": "nearby_climbing_areas",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "golfing": {
+              "value": 35,
+              "unit": "count",
+              "statistic": "courses",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "dog_parks": {
+              "value": 25,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "camping": {
+              "value": 40,
+              "unit": "count",
+              "statistic": "nearby_campgrounds",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "fishing": {
+              "value": 78,
+              "unit": "score_0_100",
+              "statistic": "illustrative_opportunity_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "healthcare": {
+          "label": "Healthcare",
+          "metrics": {
+            "hospitals": {
+              "value": 14,
+              "unit": "count",
+              "statistic": "facilities",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "maternity_services": {
+              "value": 10,
+              "unit": "count",
+              "statistic": "facilities_with_maternity_services",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "gyms": {
+              "value": 130,
+              "unit": "count",
+              "statistic": "locations",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "transportation": {
+          "label": "Transportation",
+          "metrics": {
+            "average_commute_time": {
+              "value": 23,
+              "unit": "minutes",
+              "statistic": "one_way_average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "public_transportation": {
+              "value": 58,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "bus_stops": {
+              "value": 3200,
+              "unit": "count",
+              "statistic": "stops",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "walkability": {
+              "value": 61,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "bikeability": {
+              "value": 58,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "traffic_congestion": {
+              "value": 48,
+              "unit": "score_0_100",
+              "statistic": "illustrative_congestion_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "train_access": {
+              "value": 38,
+              "unit": "score_0_100",
+              "statistic": "illustrative_access_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "electric_vehicle_charging": {
+              "value": 420,
+              "unit": "count",
+              "statistic": "public_charging_ports",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "disability_accessibility": {
+              "value": 78,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "airport_access": {
+              "value": 15,
+              "unit": "minutes",
+              "statistic": "drive_to_nearest_commercial_airport",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "demographics": {
+          "label": "Demographics",
+          "metrics": {
+            "population": {
+              "value": 920000,
+              "unit": "people",
+              "statistic": "estimate",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "population_density": {
+              "value": 4100,
+              "unit": "people_per_sq_mile",
+              "statistic": "density",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "median_age": {
+              "value": 33.5,
+              "unit": "years",
+              "statistic": "median",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "retirees": {
+              "value": 11.8,
+              "unit": "percent",
+              "statistic": "population_age_65_plus",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "families_with_children": {
+              "value": 25,
+              "unit": "percent",
+              "statistic": "households",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "languages_spoken": {
+              "value": 120,
+              "unit": "count",
+              "statistic": "languages",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "cultural_diversity": {
+              "value": 72,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "housing": {
+          "label": "Housing",
+          "metrics": {
+            "average_home_size": {
+              "value": 1950,
+              "unit": "sq_ft",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "average_lot_size": {
+              "value": 6500,
+              "unit": "sq_ft",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "hoa_prevalence": {
+              "value": 18,
+              "unit": "percent",
+              "statistic": "share_of_residential_properties",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "housing_types": {
+              "value": {
+                "single_family": 58,
+                "apartments": 29,
+                "condos": 6,
+                "townhomes": 7
+              },
+              "unit": "percent",
+              "statistic": "estimated_unit_mix",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "business_environment": {
+          "label": "Business Environment",
+          "metrics": {
+            "business_taxes": {
+              "value": 22,
+              "unit": "percent",
+              "statistic": "illustrative_combined_business_tax_burden",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "commercial_rent": {
+              "value": 22.0,
+              "unit": "USD/sq_ft/year",
+              "statistic": "average",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            },
+            "small_business_environment_score": {
+              "value": 79,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        },
+        "general_quality_of_life": {
+          "label": "General Quality of Life",
+          "metrics": {
+            "cleanliness": {
+              "value": 76,
+              "unit": "score_0_100",
+              "statistic": "illustrative_score",
+              "source": null,
+              "last_updated": null,
+              "data_status": "sample"
+            }
+          }
+        }
+      }
+    }
+  ]
+}
