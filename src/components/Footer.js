@@ -10,6 +10,10 @@ export default function Footer() {
         © {currentYear}
         LifeMap, All rights reserved.
       </p>
+      <p className="api-credit">
+        This product uses the Census Bureau Data API but is not endorsed or
+        certified by the Census Bureau.
+      </p>
     </footer>
   );
 }
