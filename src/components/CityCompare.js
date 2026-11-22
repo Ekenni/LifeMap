@@ -2,26 +2,27 @@ import "../styles.css";
 import Search from "./Search";
 import City from "./Cities";
 import { useEffect, useState } from "react";
+import highlightedMetrics from "../data/HighlightedMetrics";
+import { getClimateData } from "../services/openMetroApi";
+import { getCitySafetyData } from "../services/fbiCrimeApi";
 import { getAllCities, getCityDetails } from "../services/censusApi";
 
 export default function CompareCities() {
+  const [activeCategory, setActiveCategory] = useState("general");
   const [search1, setSearch1] = useState("");
   const [search2, setSearch2] = useState("");
-
   const [selectedCity1, setSelectedCity1] = useState(null);
   const [selectedCity2, setSelectedCity2] = useState(null);
-
   const [cityData, setCityData] = useState([]);
   const [loadingCities, setLoadingCities] = useState(true);
   const [error, setError] = useState(null);
-
   useEffect(() => {
     async function loadCities() {
       try {
         const cities = await getAllCities();
         setCityData(cities);
-      } catch (error) {
-        setError(error.message);
+      } catch (loadError) {
+        setError(loadError.message);
       } finally {
         setLoadingCities(false);
       }
@@ -37,10 +38,22 @@ export default function CompareCities() {
     }
 
     try {
-      const cityWithDetails = await getCityDetails(city);
-      setSelectedCity1(cityWithDetails);
-    } catch (error) {
-      console.error(error);
+      const [censusData, climateData, safetyData] = await Promise.all([
+        getCityDetails(city),
+        getClimateData(city),
+        getCitySafetyData(city),
+      ]);
+
+      setSelectedCity1({
+        ...censusData,
+        categories: {
+          ...censusData.categories,
+          climate_environment: climateData,
+          safety: safetyData,
+        },
+      });
+    } catch (selectError) {
+      setError(selectError.message);
     }
   }
 
@@ -49,53 +62,79 @@ export default function CompareCities() {
       setSelectedCity2(null);
       return;
     }
+
     try {
-      const cityWithDetails = await getCityDetails(city);
-      setSelectedCity2(cityWithDetails);
-    } catch (error) {
-      console.error(error);
+      const [censusData, climateData, safetyData] = await Promise.all([
+        getCityDetails(city),
+        getClimateData(city),
+        getCitySafetyData(city),
+      ]);
+
+      setSelectedCity2({
+        ...censusData,
+        categories: {
+          ...censusData.categories,
+          climate_environment: climateData,
+          safety: safetyData,
+        },
+      });
+    } catch (selectError) {
+      setError(selectError.message);
     }
   }
 
+  if (loadingCities) {
+    return <p>Loading cities...</p>;
+  }
+
+  if (error) {
+    return <p>{error}</p>;
+  }
+
   return (
-    <div>
-      {loadingCities && <p>Loading cities...</p>}
-      {error && <p>Error loading cities: {error}</p>}
-      <div className="comparison-container">
-        <div className="comparison-column">
-          <h2>City 1</h2>
+    <div className="city-compare">
+      <div className="category-buttons">
+        {Object.entries(highlightedMetrics).map(([categoryKey, category]) => (
+          <button
+            type="button"
+            key={categoryKey}
+            className={activeCategory === categoryKey ? "active" : ""}
+            onClick={() => setActiveCategory(categoryKey)}
+          >
+            {category.label}
+          </button>
+        ))}
+      </div>
 
-          <Search
-            search={search1}
-            setSearch={setSearch1}
-            cityData={cityData}
-            onSelectCity={handleSelectCity1}
-            placeholder="Search first city..."
-          />
+      <div className="city-searches">
+        <Search
+          search={search1}
+          setSearch={setSearch1}
+          cityData={cityData}
+          onSelectCity={handleSelectCity1}
+          placeholder="Search first city..."
+        />
 
-          {selectedCity1 ? (
-            <City city={selectedCity1} />
-          ) : (
-            <div className="empty-city">Search and select a city</div>
-          )}
-        </div>
-        <div className="comparison-column">
-          <h2>City 2</h2>
+        <Search
+          search={search2}
+          setSearch={setSearch2}
+          cityData={cityData}
+          onSelectCity={handleSelectCity2}
+          placeholder="Search second city..."
+        />
+      </div>
+      <div className="city-comparison">
+        {selectedCity1 ? (
+          <City city={selectedCity1} activeCategory={activeCategory} />
+        ) : (
+          <div className="empty-city">Search for your first city</div>
+        )}
 
-          <Search
-            search={search2}
-            setSearch={setSearch2}
-            cityData={cityData}
-            onSelectCity={handleSelectCity2}
-            placeholder="Search second city..."
-          />
-
-          {selectedCity2 ? (
-            <City city={selectedCity2} />
-          ) : (
-            <div className="empty-city">Search and select a city</div>
-          )}
-        </div>
+        {selectedCity2 ? (
+          <City city={selectedCity2} activeCategory={activeCategory} />
+        ) : (
+          <div className="empty-city">Search for your second city</div>
+        )}
       </div>
     </div>
   );

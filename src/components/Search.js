@@ -2,13 +2,14 @@ import "../styles.css";
 import { useState } from "react";
 
 export default function Search({
-  search,
+  search = "",
   setSearch,
-  cityData,
+  cityData = [],
   onSelectCity,
   placeholder,
 }) {
   const [isOpen, setIsOpen] = useState(false);
+
   const normalize = (value) => value.toLowerCase().replace(/[^a-z0-9]/g, "");
 
   const filteredCities = cityData.filter((city) => {
@@ -37,7 +38,7 @@ export default function Search({
         onChange={handleChange}
         onFocus={() => setIsOpen(true)}
         placeholder={placeholder}
-        value={search.name || search}
+        value={search}
       />
 
       {isOpen && search.trim() !== "" && (
