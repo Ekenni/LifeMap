@@ -6,10 +6,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <img className="logo" src="logo.png" alt="Lifemap"></img>{" "}
-      <p className="copy">
-        © {currentYear}
-        LifeMap, All rights reserved.
-      </p>
+      <p className="copy">© {currentYear}&nbsp; LifeMap</p>
       <p className="api-credit">
         This product uses the Census Bureau Data API but is not endorsed or
         certified by the Census Bureau.

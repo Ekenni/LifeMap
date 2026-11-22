@@ -70,14 +70,14 @@ const highlightedMetrics = {
   climate_environment: {
     label: "Climate & Environment",
     metrics: [
-      "spring_high",
-      "spring_low",
-      "summer_high",
-      "summer_low",
-      "fall_high",
-      "fall_low",
-      "winter_high",
-      "winter_low",
+      "spring_average_high",
+      "spring_average_low",
+      "summer_average_high",
+      "summer_average_low",
+      "fall_average_high",
+      "fall_average_low",
+      "winter_average_high",
+      "winter_average_low",
     ],
   },
 };

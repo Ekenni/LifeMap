@@ -149,7 +149,7 @@ function calculateAnnualMetrics(data, agencyName, year) {
   return {
     total_offenses: {
       value: totalOffenses,
-      unit: "offenses this year",
+      unit: "offenses 2024",
     },
     violent_crime_rate: {
       value: Number(annualRate.toFixed(2)),

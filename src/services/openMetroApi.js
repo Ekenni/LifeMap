@@ -92,35 +92,35 @@ export async function getClimateData(city) {
   return {
     label: "Climate & Environment",
     metrics: {
-      spring_high: {
+      spring_average_high: {
         value: getSeasonAverage(daily.temperature_2m_max, [3, 4, 5]),
         unit: "°F",
       },
-      spring_low: {
+      spring_average_low: {
         value: getSeasonAverage(daily.temperature_2m_min, [3, 4, 5]),
         unit: "°F",
       },
-      summer_high: {
+      summer_average_high: {
         value: getSeasonAverage(daily.temperature_2m_max, [6, 7, 8]),
         unit: "°F",
       },
-      summer_low: {
+      summer_average_low: {
         value: getSeasonAverage(daily.temperature_2m_min, [6, 7, 8]),
         unit: "°F",
       },
-      fall_high: {
+      fall_average_high: {
         value: getSeasonAverage(daily.temperature_2m_max, [9, 10, 11]),
         unit: "°F",
       },
-      fall_low: {
+      fall_average_low: {
         value: getSeasonAverage(daily.temperature_2m_min, [9, 10, 11]),
         unit: "°F",
       },
-      winter_high: {
+      winter_average_high: {
         value: getSeasonAverage(daily.temperature_2m_max, [12, 1, 2]),
         unit: "°F",
       },
-      winter_low: {
+      winter_average_low: {
         value: getSeasonAverage(daily.temperature_2m_min, [12, 1, 2]),
         unit: "°F",
       },

@@ -2,11 +2,29 @@
   box-sizing: border-box;
 }
 
+:root {
+  --color-page: #fcfaf5;
+  --color-surface: #fffefa;
+  --color-tan: #f4efdf;
+  --color-tan-border: #e7dfce;
+  --color-green: #426748;
+  --color-green-dark: #2f5035;
+  --color-green-soft: #edf3e9;
+  --color-text: #344438;
+  --color-muted: #687568;
+  --font-playful: "Trebuchet MS", "Arial Rounded MT Bold", sans-serif;
+}
+
 body {
   margin: 0;
-  background: #f5f7fa;
-  color: #233044;
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-page);
+  color: var(--color-text);
+  font-family: var(--font-playful);
+}
+
+button,
+input {
+  font: inherit;
 }
 
 .App {
@@ -26,18 +44,27 @@ body {
 
 .header {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem max(1.5rem, calc((100% - 1120px) / 2));
-  background: #fff;
-  border-bottom: 1px solid #dfe5ec;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background: var(--color-tan);
+  border: 1px solid var(--color-tan-border);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  color: var(--color-green-dark);
+  font-family: var(--font-playful);
 }
 
 .logo {
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 104px;
+  height: 104px;
   object-fit: contain;
 }
 
@@ -51,14 +78,14 @@ body {
 }
 
 .header a {
-  color: #344b68;
+  color: var(--color-green-dark);
   font-weight: 600;
   text-decoration: none;
 }
 
 .header a:hover,
 .header a:focus-visible {
-  color: #1769aa;
+  color: var(--color-green);
   text-decoration: underline;
 }
 
@@ -75,10 +102,10 @@ body {
   flex: 1 1 320px;
   max-width: 540px;
   padding: 1.25rem;
-  background: #fff;
-  border: 1px solid #dfe5ec;
+  background: var(--color-surface);
+  border: 1px solid var(--color-tan-border);
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgb(35 48 68 / 6%);
+  box-shadow: 0 2px 8px rgb(47 80 53 / 8%);
   text-align: left;
 }
 
@@ -90,21 +117,21 @@ body {
 
 .city-card-title {
   margin: 0;
-  color: #1c3656;
+  color: var(--color-green-dark);
 }
 
 .city-card-genre {
-  color: #64748b;
+  color: var(--color-muted);
 }
 
 .city-card section {
   padding-top: 0.5rem;
-  border-top: 1px solid #e8edf2;
+  border-top: 1px solid var(--color-tan-border);
 }
 
 .city-card h4 {
   margin: 0 0 0.5rem;
-  color: #344b68;
+  color: var(--color-green-dark);
 }
 
 .city-card dl {
@@ -121,7 +148,7 @@ body {
 }
 
 .city-card dt {
-  color: #526174;
+  color: var(--color-muted);
 }
 
 .city-card dd {
@@ -136,8 +163,8 @@ body {
   justify-content: center;
   gap: 0.75rem;
   padding: 1rem 1.5rem;
-  background: #e9eef4;
-  color: #526174;
+  background: var(--color-tan);
+  color: var(--color-green-dark);
 }
 
 .footer .logo {
@@ -151,13 +178,12 @@ body {
 
 @media (max-width: 560px) {
   .header {
-    flex-direction: column;
-    padding: 1rem;
+    padding: 1.25rem 1rem;
   }
 
-  .header ul {
-    justify-content: center;
-    gap: 0.75rem 1rem;
+  .header .logo {
+    width: 88px;
+    height: 88px;
   }
 
   .container {

@@ -18,23 +18,23 @@
 
 .category-buttons button {
   padding: 0.75rem 1rem;
-  color: #344b68;
+  color: var(--color-green-dark);
   text-align: left;
-  background: #fff;
-  border: 1px solid #dfe5ec;
+  background: var(--color-surface);
+  border: 1px solid var(--color-tan-border);
   border-radius: 6px;
   cursor: pointer;
 }
 
 .category-buttons button:hover,
 .category-buttons button:focus-visible {
-  border-color: #1769aa;
+  border-color: var(--color-green);
 }
 
 .category-buttons button.active {
   color: #fff;
-  background: #1769aa;
-  border-color: #1769aa;
+  background: var(--color-green);
+  border-color: var(--color-green);
 }
 
 .city-searches {
@@ -65,6 +65,15 @@
   width: 100%;
   box-sizing: border-box;
   padding: 12px;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-tan-border);
+  border-radius: 6px;
+}
+
+.search-container input:focus-visible {
+  outline: 2px solid var(--color-green);
+  outline-offset: 2px;
 }
 
 .search-dropdown {
@@ -72,8 +81,8 @@
   top: 100%;
   left: 0;
   width: 100%;
-  background: white;
-  border: 1px solid #ddd;
+  background: var(--color-surface);
+  border: 1px solid var(--color-tan-border);
   border-radius: 6px;
   z-index: 10;
   max-height: 250px;
@@ -85,20 +94,27 @@
   width: 100%;
   padding: 12px;
   text-align: left;
-  background: white;
+  color: var(--color-text);
+  background: var(--color-surface);
   border: none;
   cursor: pointer;
 }
 
 .search-option:hover {
-  background: #f0f0f0;
+  background: var(--color-green-soft);
 }
 
 .no-results,
 .empty-city {
   padding: 24px;
   text-align: center;
-  color: #777;
+  color: var(--color-muted);
+}
+
+.empty-city {
+  background: var(--color-surface);
+  border: 1px dashed var(--color-tan-border);
+  border-radius: 8px;
 }
 
 @media (max-width: 760px) {
